@@ -9,7 +9,6 @@ namespace LineComparision
             Console.WriteLine("... Welcome to Line Comparison Computation ... ");
             LineComparision Line = new LineComparision();
             Line.length();
-            Line.checkequal();
             Console.ReadKey();
         }
     }
