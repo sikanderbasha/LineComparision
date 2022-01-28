@@ -16,6 +16,8 @@ namespace LineComparision
         public int A2;
         public int B1;
         public int B2;
+        public double LengthOfXY;
+        public double LengthOfAB;
         public void length()
         {
 
@@ -48,6 +50,16 @@ namespace LineComparision
             double LengthOfAB = Math.Sqrt(Math.Pow((A2 - A1), 2) + Math.Pow((B1 - B2), 2));
             Console.WriteLine("Length of Value 2 is: " + LengthOfAB);
 
+        }
+        public void checkequal()
+        {
+            bool Result = LengthOfXY.Equals(LengthOfAB);
+
+            if (Result == false)
+                Console.WriteLine("Lines LengthOfXY and LengthOfAB are NOT Equal.");
+            else
+                Console.WriteLine("Lines LengthOfXY and LengthOfAB are Equal.");
+            Console.ReadKey();
         }
     }
 }
